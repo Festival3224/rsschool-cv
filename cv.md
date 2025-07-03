@@ -16,3 +16,15 @@
 - Git, GitHub
 - VS Code
 - Markdown
+
+## Образование
+
+- Rolling Scopes School (2025)
+- CodeOP
+- КубГУ, Прикладная математика
+
+## Ссылки
+
+- [GitHub](https://github.com/Festival3224)
+- [LinkedIn](https://linkedin.com/in/eugenia-kapusta)
+
