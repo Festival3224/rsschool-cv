@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RSS CV</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Eugenia Kapusta</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/34acd9e9c8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Eugenia Kapusta</h1>
-    <h2>Frontend Developer</h2>
-  </header>
-  <main>
-    <section>
-      <h3>About Me</h3>
-      <p>Frontend developer with 3+ years of practical experience and 20+ years in IT overall. Skilled in Vue.js, TypeScript, and modern UI development.
-         Passionate about clean code, performance optimization, and team collaboration. Actively seeking a role in a growth-oriented international company
-          where I can contribute and continue learning. Currently learning at RS School.
-      </p>
+<header class="header">
+    <h2 class="visualhidden">Header</h2>
+    <div class="wrapper">
+        <nav class="header_nav">
+            <h2 class="visualhidden">Navigation</h2>
+            <a href="/" class="header-home">
+                eugeniakapusta
+                <span class="visualhidden">(to home page)</span>
+            </a>
+            <a href="https://github.com/Festival3224" target="_blank" class="header_social"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/eugenia-kapusta/" target="_blank" class="header_social"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="https://t.me/eugeniakapusta" target="_blank" class="header_social"><i class="fa-brands fa-telegram fa-2x"></i></a>
+        </nav>
+    </div>
+</header>
+
+  <main id="main">
+    <section class="hero">
+        <div class="wrapper hero_wrapper bottom-border">
+            <div class="hero_image">
+                <img src="./assets/images/Me_500w.png" alt="picture of me" />
+            </div>
+            <div class="hero_text">
+                <h1 class="hero_heading header-xl">Hey there! <br /> I'm <span>Eugenia Kapusta</span>,<br /> a Frontend Developer.</h1>
+                <p class="hero_description">Based in Spain, I'm a frontend developer with a strong tech background, passionate about building accesible, user-friendly
+                    web apps that people love to use.</p>
+                <a href="" class="hero_contact underline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about">
+        <div class="wrapper">
+            <h3>About Me</h3>
+            <p>Frontend developer with 3+ years of practical experience and 20+ years in IT overall. Skilled in Vue.js,
+                TypeScript, and modern UI development.
+                Passionate about clean code, performance optimization, and team collaboration. Actively seeking a role in a
+                growth-oriented international company
+                where I can contribute and continue learning. Currently learning at RS School.
+            </p>
+        </div>
     </section>
 
     <section>
-      <h3>Skills</h3>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Git/GitHub</li>
-        <li>Vue.js</li>
-        <li>Bootstrap and TailwindCSS</li>
-        <li>Node.js</li>
-        <li>Figma and Canva</li>
-      </ul>
+        <div class="wrapper bottom-border">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Git/GitHub</li>
+                <li>Vue.js</li>
+                <li>Bootstrap and TailwindCSS</li>
+                <li>Node.js</li>
+                <li>Figma and Canva</li>
+            </ul>
+        </div>    
     </section>
 
     <section>
-      <h3>Languages</h3>
-      <ul>
-        <li>Russian — native</li>
-        <li>English — B2</li>
-        <li>Spanish — B1-B2</li>
-      </ul>
+        <div class="wrapper">
+            <h3>Languages</h3>
+            <ul>
+                <li>Russian — native</li>
+                <li>English — B2</li>
+                <li>Spanish — B1-B2</li>
+            </ul>
+        </div>
     </section>
   </main>
 
-  <footer>
-    <p>Find me on <a href="https://github.com/Festival3224" target="_blank">GitHub</a></p>
+  <footer class="footer">
+    <div class="footer__content">
+        <a href="https://github.com/Festival3224" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-github fa-2x"></i></a>
+        <span>2025</span>
+        <a href="https://rs.school/courses/javascript-ru" target="_blank" rel="noopener noreferrer" >
+            <img src="./assets/images/rs-school-logo.svg" alt="RS School logo" class="footer__logo" />
+        </a>
+    </div>
+    <!-- <p>Find me on <a href="https://github.com/Festival3224" target="_blank">GitHub</a></p> -->
   </footer>
 </body>
 </html>
