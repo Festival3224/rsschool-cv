@@ -337,6 +337,28 @@ h1 > span {
     }
 }
 
+/* skills*/
+
+.skills-list {
+    margin: 0;
+    padding-left: 1.4rem;
+}
+
+.skills-list li {
+    margin-bottom: 0.65rem;
+    color: var(--text2);
+    line-height: 1.5;
+}
+
+.skills-list li::marker {
+    color: var(--accent);
+}
+
+.skills-list strong {
+    color: var(--text1);
+    font-weight: 700;
+}
+
 
 /*   FOOTER*/
 .footer {
@@ -344,7 +366,7 @@ h1 > span {
     text-align: center;
     border-top: 1px solid var(--text2);
     font-size: 0.875rem;
-    background-color: var(--bg-contact);
+    /* background-color: var(--bg-contact); */
 }
 
 .footer__content {
