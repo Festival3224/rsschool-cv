@@ -10,9 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
@@ -37,8 +34,15 @@
                         eugeniakapusta
                         <span class="visualhidden">(to home page)</span>
                     </a>
-                    <a href="https://github.com/Festival3224" target="_blank" class="header_social"><i
-                            class="fa-brands fa-github fa-2x"></i></a>
+
+                    <a
+                         href="https://github.com/Festival3224"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         class="header_social"
+                         aria-label="GitHub">
+                         <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
                     <a href="https://www.linkedin.com/in/eugenia-kapusta/" target="_blank" class="header_social"><i
                             class="fa-brands fa-linkedin fa-2x"></i></a>
                     <a href="https://t.me/eugeniakapusta" target="_blank" class="header_social"><i
@@ -58,7 +62,7 @@
                         a Frontend Developer.
                     </h1>
                     <p>
-                        Frontend developer with a strong technical background in software,
+                        Creative Frontend Developer with a strong technical background in software,
                         automation and data-driven systems. I build responsive web applications
                         with React, Vue.js and JavaScript, integrate REST APIs and work with
                         Git-based development workflows. I value clean code, accessibility,
@@ -126,13 +130,64 @@
         </div>
     </section>
 
-    <section>
-        <div class="wrapper bottom-border">
-            <h2>Code Example</h2>        
-        </div>  
+    <section class="code-example">
+        <div class="wrapper">
+    
+            <h2>Code Example</h2>
+            <h3>Typing Effect</h3>
+            <p class="code-example__description">
+                A small JavaScript typing effect created for my CV to cycle
+                through the kinds of web experiences I enjoy building.
+            </p>
+    
+            <p class="typing-demo">
+                I build <span class="typed-text"></span>
+            </p>
+    
+            <div class="code-window">
+                <pre class="code-content"><code>
+        const phrases = [
+            "responsive interfaces",
+            "accessible web apps",
+            "user-friendly experiences"
+        ];
+        
+        const textElement = document.querySelector(".typed-text");
+        
+        let phraseIndex = 0;
+        let letterIndex = 0;
+        
+        function typeText() {
+            const currentPhrase = phrases[phraseIndex];
+        
+            if (letterIndex &lt; currentPhrase.length) {
+                textElement.textContent += currentPhrase[letterIndex];
+                letterIndex++;
+                setTimeout(typeText, 100);
+            } else {
+                setTimeout(deleteText, 1200);
+            }
+        }
+        
+        function deleteText() {
+            if (letterIndex &gt; 0) {
+                textElement.textContent =
+                    textElement.textContent.slice(0, -1);
+                letterIndex--;
+                setTimeout(deleteText, 60);
+            } else {
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(typeText, 300);
+            }
+        }
+        
+        typeText();
+                    </code></pre>
+            </div>
+        </div>
     </section>
 
-    <section>
+    <section class="projects">
         <div class="wrapper bottom-border">
             <h2>Projects</h2>        
         </div>        
@@ -167,5 +222,7 @@
     </div>
     <!-- <p>Find me on <a href="https://github.com/Festival3224" target="_blank">GitHub</a></p> -->
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

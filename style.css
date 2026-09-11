@@ -279,9 +279,9 @@ h1 > span {
   background-size: 8px 8px;
 }
 
-.hero_description {
+/* .hero_description {
   margin-block-end: 24px;
-}
+} */
 
 @media (min-width: 43.75em) { /*  700px  */
      .hero_wrapper {
@@ -359,6 +359,67 @@ h1 > span {
     font-weight: 700;
 }
 
+/* CODE-EXAMPLE */
+.code-window {
+    height: 50vh;
+    min-height: 280px;
+    max-height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.code-content {
+    margin: 0;
+    padding: 1.5rem;
+    will-change: transform;
+}
+
+.code-content code {
+    font-family: monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text1);
+}
+
+.code-example__description {
+    margin-bottom: 1rem;
+}
+
+.typing-demo {
+    text-align: center;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin: 3rem 0;
+}
+
+.typed-text {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.typed-text::after {
+    content: "|";
+    margin-left: 0.2rem;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* PROJECTS */
+.projects {
+    padding: 3rem 1rem;
+}
 
 /*   FOOTER*/
 .footer {
@@ -366,7 +427,6 @@ h1 > span {
     text-align: center;
     border-top: 1px solid var(--text2);
     font-size: 0.875rem;
-    /* background-color: var(--bg-contact); */
 }
 
 .footer__content {
