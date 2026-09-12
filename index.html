@@ -143,46 +143,48 @@
             <p class="typing-demo">
                 I build <span class="typed-text"></span>
             </p>
-    
             <div class="code-window">
                 <pre class="code-content"><code>
-        const phrases = [
-            "responsive interfaces",
-            "accessible web apps",
-            "user-friendly experiences"
+
+        <span class="token keyword">const</span> phrases = [
+            <span class="token string">"responsive interfaces"</span>,
+            <span class="token string">"accessible web apps"</span>,
+            <span class="token string">"user-friendly experiences"</span>
         ];
         
-        const textElement = document.querySelector(".typed-text");
+        <span class="token keyword">const</span> textElement =
+            document.<span class="token function">querySelector</span>(<span class="token string">".typed-text"</span>);
         
-        let phraseIndex = 0;
-        let letterIndex = 0;
+        <span class="token keyword">let</span> phraseIndex = <span class="token number">0</span>;
+        <span class="token keyword">let</span> letterIndex = <span class="token number">0</span>;
         
-        function typeText() {
-            const currentPhrase = phrases[phraseIndex];
+        <span class="token keyword">function</span> <span class="token function">typeText</span>() {
+            <span class="token keyword">const</span> currentPhrase = phrases[phraseIndex];
         
-            if (letterIndex &lt; currentPhrase.length) {
-                textElement.textContent += currentPhrase[letterIndex];
+            <span class="token keyword">if</span> (letterIndex &lt; currentPhrase.<span class="token property">length</span>) {
+                textElement.<span class="token property">textContent</span> += currentPhrase[letterIndex];
                 letterIndex++;
-                setTimeout(typeText, 100);
-            } else {
-                setTimeout(deleteText, 1200);
+                <span class="token function">setTimeout</span>(typeText, <span class="token number">100</span>);
+            } <span class="token keyword">else</span> {
+                <span class="token function">setTimeout</span>(deleteText, <span class="token number">1200</span>);
             }
         }
         
-        function deleteText() {
-            if (letterIndex &gt; 0) {
-                textElement.textContent =
-                    textElement.textContent.slice(0, -1);
+        <span class="token keyword">function</span> <span class="token function">deleteText</span>() {
+            <span class="token keyword">if</span> (letterIndex &gt; <span class="token number">0</span>) {
+                textElement.<span class="token property">textContent</span> =
+                    textElement.<span class="token property">textContent</span>.slice(<span class="token number">0</span>, <span class="token number">-1</span>);
                 letterIndex--;
-                setTimeout(deleteText, 60);
-            } else {
-                phraseIndex = (phraseIndex + 1) % phrases.length;
-                setTimeout(typeText, 300);
+                <span class="token function">setTimeout</span>(deleteText, <span class="token number">60</span>);
+            } <span class="token keyword">else</span> {
+                phraseIndex = (phraseIndex + <span class="token number">1</span>) % phrases.<span class="token property">length</span>;
+                <span class="token function">setTimeout</span>(typeText, <span class="token number">300</span>);
             }
         }
         
-        typeText();
-                    </code></pre>
+        <span class="token function">typeText</span>();
+
+        </code></pre>
             </div>
         </div>
     </section>
