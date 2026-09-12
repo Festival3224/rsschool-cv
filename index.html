@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,33 +24,60 @@
 <body>
     <div class="top-screen">
         <header class="header">
-            <h2 class="visualhidden">Header</h2>
             <div class="wrapper">
                 <nav class="header_nav">
-                    <h2 class="visualhidden">Navigation</h2>
                     <a href="#" class="logo-link">
                         <img src="./assets/images/logo.svg" alt="EK logo" class="logo">
                     </a>
-                    <a href="/" class="header-home">
-                        eugeniakapusta
-                        <span class="visualhidden">(to home page)</span>
-                    </a>
-
-                    <a
-                         href="https://github.com/Festival3224"
-                         target="_blank"
-                         rel="noopener noreferrer"
-                         class="header_social"
-                         aria-label="GitHub">
-                         <i class="fa-brands fa-github fa-2x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/eugenia-kapusta/" target="_blank" class="header_social"><i
-                            class="fa-brands fa-linkedin fa-2x"></i></a>
-                    <a href="https://t.me/eugeniakapusta" target="_blank" class="header_social"><i
-                            class="fa-brands fa-telegram fa-2x"></i></a>
+        
+                    <ul class="contact-list">
+                        <li>
+                            <a
+                                href="mailto:kapustaeugenia@gmail.com"
+                                aria-label="Email"
+                                class="contact-link"
+                            >
+                                <i class="fa-regular fa-envelope fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/Festival3224"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-link"
+                                aria-label="GitHub"
+                            >
+                                <i class="fa-brands fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/eugenia-kapusta/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-link"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fa-brands fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://t.me/eugeniakapusta"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-link"
+                                aria-label="Telegram"
+                            >
+                                <i class="fa-brands fa-telegram fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
+
         <section class="hero">
             <div class="wrapper hero_wrapper bottom-border">
                 <div class="hero_image">
@@ -69,82 +97,100 @@
                         performance and clear user interfaces. Currently, I am strengthening
                         my TypeScript and testing skills through the RS School Front-end Short Track.
                     </p>
-                    <a href="" class="hero_contact underline">Contact Me</a>
+                    <div class="hero_actions">
+                        <a
+                            href="mailto:kapustaeugenia@gmail.com?subject=Frontend%20Developer%20Contact"
+                            class="hero_button hero_button--primary">
+                            <i class="fa-regular fa-envelope"></i>
+                            Contact Me
+                        </a>
+                        <button
+                            type="button"
+                            class="hero_button hero_button--secondary"
+                            disabled
+                        >
+                            <i class="fa-solid fa-download"></i>
+                            Download CV
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
-  <main id="main">  
-    <section class="about">
-        <div class="wrapper">
-            <h2>About Me</h2>
-            <p>
-                I am a Frontend Developer with a strong technical background in software,
-                automation and information systems. Before moving into modern web development,
-                I worked in banking IT, where I supported business-critical systems, worked
-                with databases and automation, and collaborated with both technical teams
-                and business users.
-            </p>
-    
-            <p>
-                Today, I focus on building responsive, accessible and user-friendly web
-                applications. I enjoy turning designs and business requirements into clear,
-                maintainable interfaces and solving the technical details behind them — from
-                responsive layouts and API integration to data handling and performance.
-                I value clean code, usability and thoughtful user experiences, and I am
-                currently strengthening my TypeScript and testing skills through the RS School
-                Front-end Short Track.
-            </p>
-    
-            <p>
-                I am based in Girona, Spain, and enjoy working in international environments. Outside development, I am
-                interested
-                in languages, design and continuous learning. When I’m not coding, I love escaping into nature with my
-                family,
-                discovering new places, and staying active through CrossFit.
-            </p>
-        </div>
-    </section>
+    <main id="main">
+        <section class="about">
+            <div class="wrapper">
+                <h2>About Me</h2>
+                <p>
+                    I am a Frontend Developer with a strong technical background in software,
+                    automation and information systems. Before moving into modern web development,
+                    I worked in banking IT, where I supported business-critical systems, worked
+                    with databases and automation, and collaborated with both technical teams
+                    and business users.
+                </p>
 
-    <section>
-        <div class="wrapper bottom-border">
-            <h2>Contacts</h2>
-        </div>
-    </section>
-    
-    <section>
-        <div class="wrapper bottom-border">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Programming Languages: </strong>JavaScript (ES6+), TypeScript (basic working knowledge)</li>
-                <li><strong>Web Technologies: </strong>HTML5, CSS3, responsive design</li>
-                <li><strong>Frameworks & Runtime: </strong>React, Vue.js, Node.js, Express.js</li>
-                <li><strong>UI & Styling: </strong>Tailwind CSS, Bootstrap, Figma</li>              
-                <li><strong>APIs: </strong>REST APIs, Axios, Fetch API</li>                
-                <li><strong>Databases: </strong>SQL, MS SQL Server</li>
-                <li><strong>Version Control: </strong>Git & GitHub</li>
-                <li><strong>Development Tools: </strong>Vite, VS Code, Linux</li>                
-                <li><strong>Collaboration Tools: </strong>Slack, Trello</li>
-            </ul>
-        </div>
-    </section>
+                <p>
+                    Today, I focus on building responsive, accessible and user-friendly web
+                    applications. I enjoy turning designs and business requirements into clear,
+                    maintainable interfaces and solving the technical details behind them — from
+                    responsive layouts and API integration to data handling and performance.
+                    I value clean code, usability and thoughtful user experiences, and I am
+                    currently strengthening my TypeScript and testing skills through the RS School
+                    Front-end Short Track.
+                </p>
 
-    <section class="code-example">
-        <div class="wrapper">
-    
-            <h2>Code Example</h2>
-            <h3>Typing Effect</h3>
-            <p class="code-example__description">
-                A small JavaScript typing effect created for my CV to cycle
-                through the kinds of web experiences I enjoy building.
-            </p>
-    
-            <p class="typing-demo">
-                I build <span class="typed-text"></span>
-            </p>
-            <div class="code-window">
-                <pre class="code-content"><code>
+                <p>
+                    I am based in Girona, Spain, and enjoy working in international environments. Outside development, I
+                    am
+                    interested
+                    in languages, design and continuous learning. When I’m not coding, I love escaping into nature with
+                    my
+                    family,
+                    discovering new places, and staying active through CrossFit.
+                </p>
+            </div>
+        </section>
+
+       <!--  <section>
+            <div class="wrapper bottom-border">
+                <h2>Contacts</h2>
+            </div>
+        </section> -->
+
+        <section>
+            <div class="wrapper bottom-border">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li><strong>Programming Languages: </strong>JavaScript (ES6+), TypeScript (basic working knowledge)
+                    </li>
+                    <li><strong>Web Technologies: </strong>HTML5, CSS3, responsive design</li>
+                    <li><strong>Frameworks & Runtime: </strong>React, Vue.js, Node.js, Express.js</li>
+                    <li><strong>UI & Styling: </strong>Tailwind CSS, Bootstrap, Figma</li>
+                    <li><strong>APIs: </strong>REST APIs, Axios, Fetch API</li>
+                    <li><strong>Databases: </strong>SQL, MS SQL Server</li>
+                    <li><strong>Version Control: </strong>Git & GitHub</li>
+                    <li><strong>Development Tools: </strong>Vite, VS Code, Linux</li>
+                    <li><strong>Collaboration Tools: </strong>Slack, Trello</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="code-example">
+            <div class="wrapper">
+
+                <h2>Code Example</h2>
+                <h3>Typing Effect</h3>
+                <p class="code-example__description">
+                    A small JavaScript typing effect created for my CV to cycle
+                    through the kinds of web experiences I enjoy building.
+                </p>
+
+                <p class="typing-demo">
+                    I build <span class="typed-text"></span>
+                </p>
+                <div class="code-window">
+                    <pre class="code-content"><code>
 
         <span class="token keyword">const</span> phrases = [
             <span class="token string">"responsive interfaces"</span>,
@@ -185,45 +231,47 @@
         <span class="token function">typeText</span>();
 
         </code></pre>
+                </div>
             </div>
+        </section>
+
+        <section class="projects">
+            <div class="wrapper bottom-border">
+                <h2>Projects</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper bottom-border">
+                <h2>Education</h2>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="wrapper">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Russian — native</li>
+                    <li>English — B2</li>
+                    <li>Spanish — B2</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <a href="https://github.com/Festival3224" target="_blank" rel="noopener noreferrer" class="footer_link"><i
+                    class="fa-brands fa-github fa-2x"></i></a>
+            <span>2026</span>
+            <a href="https://rs.school/courses/short-track" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/rs-school-logo.svg" alt="RS School logo" class="footer__logo" />
+            </a>
         </div>
-    </section>
+    </footer>
 
-    <section class="projects">
-        <div class="wrapper bottom-border">
-            <h2>Projects</h2>        
-        </div>        
-    </section>
-
-    <section>
-        <div class="wrapper bottom-border">
-            <h2>Education</h2>        
-        </div>
-    </section>
-
-
-    <section>
-        <div class="wrapper">
-            <h2>Languages</h2>
-            <ul>
-                <li>Russian — native</li>
-                <li>English — B2</li>
-                <li>Spanish — B2</li>
-            </ul>
-        </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__content">
-        <a href="https://github.com/Festival3224" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-github fa-2x"></i></a>
-        <span>2026</span>
-        <a href="https://rs.school/courses/short-track" target="_blank" rel="noopener noreferrer" >
-            <img src="./assets/images/rs-school-logo.svg" alt="RS School logo" class="footer__logo" />
-        </a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
