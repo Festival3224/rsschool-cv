@@ -485,6 +485,37 @@ h1 > span {
     color: var(--code-property);
 }
 
+/* EDUCATION */
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+.education-item h3,
+.education-item h4,
+.education-item p {
+    margin-bottom: 0.4rem;
+}
+
+.education-subtitle {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.education-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.education-row h4 {
+    margin: 0;
+}
+
+.education-row span {
+    color: var(--text2);
+}
 
 /* PROJECTS */
 .projects {
