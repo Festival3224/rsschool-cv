@@ -485,6 +485,176 @@ h1 > span {
     color: var(--code-property);
 }
 
+/* EXPERIENCE */
+.experience {
+    padding: 8rem 0 6rem;
+}
+
+.experience-wrapper {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) 1.6fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.experience-intro {
+    max-width: 320px;
+}
+
+.experience-intro h2 {
+    color: var(--accent);
+}
+
+.experience-timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 3rem;
+    row-gap: 2.5rem;
+}
+
+.experience-item--current {
+    grid-column: 1;
+    grid-row: 1;
+
+    text-align: right;
+    padding-right: 1.5rem;
+}
+
+.experience-item--kuban {
+    grid-column: 2;
+    grid-row: 2;
+
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.experience-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: var(--accent);
+    transform: translateX(-50%);
+}
+
+.experience-item {
+    position: relative;
+}
+
+.experience-item--left {
+    grid-column: 1;
+    justify-self: end;
+    text-align: right;
+    padding-right: 1.5rem;
+}
+
+.experience-item--right {
+    grid-column: 2;
+    justify-self: start;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.experience-item--left::after,
+.experience-item--right::before {
+    content: "";
+    position: absolute;
+    top: 0.45rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+
+.experience-item--left::after {
+    right: -5px;
+}
+
+.experience-item--right::before {
+    left: -5px;
+}
+
+.experience-date {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--accent);
+    font-size: 0.9rem;
+}
+
+.experience-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.experience-role {
+    margin-bottom: 0.8rem;
+    color: var(--text2);
+}
+
+.experience-group-title {  
+    margin: 0 0 1.5rem; 
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.experience-item--cyprus {
+    grid-column: 1;
+    grid-row: 3;
+
+    text-align: right;
+    padding-right: 1.5rem;
+}
+
+@media (max-width: 56.25em) {
+    .experience {
+        padding: 5rem 0 4rem;
+    }
+
+    .experience-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .experience-intro {
+        max-width: none;
+    }
+
+    .experience-timeline {
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+    }
+
+    .experience-timeline::before {
+        left: 0;
+        transform: none;
+    }
+
+    .experience-group-title,
+    .experience-item--left,
+    .experience-item--right {
+        grid-column: 1;
+        justify-self: stretch;
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .experience-item--left::after {
+        left: -2.3rem;
+        right: auto;
+    }
+
+    .experience-item--right::before {
+        left: -2.3rem;
+    }
+}
+
 /* EDUCATION */
 .education-item {
     margin-bottom: 1.5rem;
