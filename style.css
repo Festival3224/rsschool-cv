@@ -511,10 +511,24 @@ h1 > span {
 
 .education-row h4 {
     margin: 0;
+    min-width: 0;
 }
 
 .education-row span {
     color: var(--text2);
+}
+
+@media (max-width: 40.5em) {
+    .education-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .education-row span {
+        font-size: 0.95rem;
+    }
 }
 
 /* PROJECTS */
