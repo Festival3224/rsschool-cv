@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,93 +11,461 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
 
     <script src="https://kit.fontawesome.com/34acd9e9c8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<header class="header">
-    <h2 class="visualhidden">Header</h2>
-    <div class="wrapper">
-        <nav class="header_nav">
-            <h2 class="visualhidden">Navigation</h2>
-            <a href="/" class="header-home">
-                eugeniakapusta
-                <span class="visualhidden">(to home page)</span>
+    <div class="top-screen">
+        <header class="header">
+            <div class="header-wrapper">
+                <nav class="header_nav">
+                    <a href="#" class="logo-link">
+                        <img src="./assets/images/logo.svg" alt="EK logo" class="logo">
+                    </a>
+
+                    <ul class="nav-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#code-example">Code Example</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+        
+                    <ul class="contact-list">
+                        <li>
+                            <a
+                                href="mailto:kapustaeugenia@gmail.com"
+                                aria-label="Email"
+                                class="contact-link"
+                            >
+                                <i class="fa-regular fa-envelope fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/Festival3224"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-link"
+                                aria-label="GitHub"
+                            >
+                                <i class="fa-brands fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/eugenia-kapusta/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-link"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fa-brands fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://t.me/eugeniakapusta"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-link"
+                                aria-label="Telegram"
+                            >
+                                <i class="fa-brands fa-telegram fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="wrapper hero_wrapper">
+                <div class="hero_image">
+                    <img src="./assets/images/Me_500w.png" alt="picture of me" />
+                </div>
+                <div class="hero_text">
+                    <h1 class="hero_heading header-xl">
+                        Hi, I'm <span>Eugenia Kapusta,</span><br />
+                        a Frontend Developer.
+                    </h1>
+                    <p>
+                        Creative Frontend Developer with 4+ years of experience building responsive, accessible web
+                        applications with React, Vue.js and JavaScript. I focus on clean interfaces,
+                        API integration and maintainable code.
+                    </p>
+                    <div class="hero_actions">
+                        <a
+                            href="mailto:kapustaeugenia@gmail.com?subject=Frontend%20Developer%20Contact"
+                            class="hero_button hero_button--primary">
+                            <i class="fa-regular fa-envelope"></i>
+                            Contact Me
+                        </a>
+                        <button
+                            type="button"
+                            class="hero_button hero_button--secondary"
+                            disabled
+                        >
+                            <i class="fa-solid fa-download"></i>
+                            Download CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <main id="main">
+        <section class="about" id="about">
+            <div class="wrapper">
+                <h2>About Me</h2>
+                <p>
+                    I am a Frontend Developer with a strong technical background in software,
+                    automation and information systems. Before moving into modern web development,
+                    I worked in banking IT, where I supported business-critical systems, worked
+                    with databases and automation, and collaborated with both technical teams
+                    and business users.
+                </p>
+
+                <p>
+                    Today, I focus on building responsive, accessible and user-friendly web
+                    applications. I enjoy turning designs and business requirements into clear,
+                    maintainable interfaces and solving the technical details behind them — from
+                    responsive layouts and API integration to data handling and performance.
+                    I value clean code, usability and thoughtful user experiences, and I am
+                    currently strengthening my TypeScript and testing skills through the RS School
+                    Front-end Short Track.
+                </p>
+
+                <p>
+                    I am based in Girona, Spain, and enjoy working in international environments. Outside development, I
+                    am
+                    interested
+                    in languages, design and continuous learning. When I’m not coding, I love escaping into nature with
+                    my
+                    family,
+                    discovering new places, and staying active through CrossFit.
+                </p>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+            <i class="fa-solid fa-code"></i>
+            <span></span>
+        </div>
+
+        <section class="skills" id="skills">
+            <div class="wrapper">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li><strong>Programming Languages: </strong>JavaScript (ES6+), TypeScript (basic working knowledge)
+                    </li>
+                    <li><strong>Web Technologies: </strong>HTML5, CSS3, responsive design</li>
+                    <li><strong>Frameworks & Runtime: </strong>React, Vue.js, Node.js, Express.js</li>
+                    <li><strong>UI & Styling: </strong>Tailwind CSS, Bootstrap, Figma</li>
+                    <li><strong>APIs: </strong>REST APIs, Axios, Fetch API</li>
+                    <li><strong>Databases: </strong>SQL, MS SQL Server</li>
+                    <li><strong>Version Control: </strong>Git & GitHub</li>
+                    <li><strong>Development Tools: </strong>Vite, VS Code, Linux</li>
+                    <li><strong>Collaboration Tools: </strong>Slack, Trello</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+            <i class="fa-solid fa-code"></i>
+            <span></span>
+        </div>
+
+        <section class="code-example" id="code-example">
+            <div class="wrapper">
+
+                <h2>Code Example</h2>
+                <h3>Typing Effect</h3>
+                <p class="code-example__description">
+                    A small JavaScript typing effect created for my CV to cycle
+                    through the kinds of web experiences I enjoy building.
+                </p>
+
+                <p class="typing-demo">
+                    I build <span class="typed-text"></span>
+                </p>
+                <div class="code-window">
+                    <pre class="code-content"><code>
+
+        <span class="token keyword">const</span> phrases = [
+            <span class="token string">"responsive interfaces"</span>,
+            <span class="token string">"accessible web apps"</span>,
+            <span class="token string">"user-friendly experiences"</span>
+        ];
+        
+        <span class="token keyword">const</span> textElement =
+            document.<span class="token function">querySelector</span>(<span class="token string">".typed-text"</span>);
+        
+        <span class="token keyword">let</span> phraseIndex = <span class="token number">0</span>;
+        <span class="token keyword">let</span> letterIndex = <span class="token number">0</span>;
+        
+        <span class="token keyword">function</span> <span class="token function">typeText</span>() {
+            <span class="token keyword">const</span> currentPhrase = phrases[phraseIndex];
+        
+            <span class="token keyword">if</span> (letterIndex &lt; currentPhrase.<span class="token property">length</span>) {
+                textElement.<span class="token property">textContent</span> += currentPhrase[letterIndex];
+                letterIndex++;
+                <span class="token function">setTimeout</span>(typeText, <span class="token number">100</span>);
+            } <span class="token keyword">else</span> {
+                <span class="token function">setTimeout</span>(deleteText, <span class="token number">1200</span>);
+            }
+        }
+        
+        <span class="token keyword">function</span> <span class="token function">deleteText</span>() {
+            <span class="token keyword">if</span> (letterIndex &gt; <span class="token number">0</span>) {
+                textElement.<span class="token property">textContent</span> =
+                    textElement.<span class="token property">textContent</span>.slice(<span class="token number">0</span>, <span class="token number">-1</span>);
+                letterIndex--;
+                <span class="token function">setTimeout</span>(deleteText, <span class="token number">60</span>);
+            } <span class="token keyword">else</span> {
+                phraseIndex = (phraseIndex + <span class="token number">1</span>) % phrases.<span class="token property">length</span>;
+                <span class="token function">setTimeout</span>(typeText, <span class="token number">300</span>);
+            }
+        }
+        
+        <span class="token function">typeText</span>();
+
+        </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="wrapper experience-wrapper">
+                <div class="experience-intro">
+                    <h2>Work Experience</h2>
+        
+                    <p>
+                        My professional background combines banking IT,
+                        software automation, information systems and modern
+                        frontend development.
+                    </p>
+                </div>
+        
+                <div class="experience-timeline">
+                
+                    <article class="experience-item experience-item--left experience-item--current">
+                        <span class="experience-date">Jan 2023 – Present</span>
+                
+                        <h3>Web Developer | Freelance</h3>
+                
+                        <p>
+                            I build responsive, component-based web applications using
+                            React, Vue.js and JavaScript, integrate REST APIs and develop
+                            reusable user interfaces.
+                        </p>
+                
+                        <p>
+                            Alongside freelance and personal projects, I continue developing
+                            my frontend skills through hands-on projects and structured
+                            learning, currently including the RS School Front-end Short Track.
+                        </p>
+                    </article>                   
+
+                    <article class="experience-item experience-item--right experience-item--kuban">
+                        <p class="experience-group-title">
+                            Earlier Technology Experience
+                        </p>
+                        <h3>Kuban Credit Bank</h3>
+                        <p class="experience-role">Head of Section</p>
+                    
+                        <p>
+                            Supported banking systems, ATM and POS infrastructure,
+                            participated in core banking implementation and worked
+                            extensively with SQL and operational data.
+                        </p>
+                    </article>
+                
+                    <article class="experience-item experience-item--left experience-item--cyprus">
+                        <h3>Bank of Cyprus</h3>
+                        <p class="experience-role">
+                            Deputy Head of Software, Automation & Information Security Section
+                        </p>
+                    
+                        <p>
+                            Worked with banking software, automation systems, databases
+                            and business-critical IT infrastructure, collaborating with
+                            technical teams and internal users.
+                        </p>
+                    </article>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="wrapper">
+                <h2>Projects</h2>
+        
+                <div class="projects-grid">
+        
+                    <article class="project-card">
+                        <h3>Space Travel Website</h3>
+        
+                        <p class="project-stack">
+                            HTML · CSS · JavaScript
+                        </p>
+        
+                        <p>
+                            A responsive multi-page website from FrontendMentor with adaptive layouts,
+                            responsive backgrounds and interactive navigation.
+                        </p>
+        
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/Festival3224/Space-Travel-WebSite"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+        
+                            <a href="https://celadon-manatee-e98cb5.netlify.app/"
+                               target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
+                    </article>
+        
+                    <article class="project-card">
+                        <h3>Minimalistic Portfolio</h3>
+                        
+                        <p class="project-stack">
+                            HTML · Tailwind CSS · Vue.js
+                        </p>
+                        
+                        <p>
+                            A responsive multi-page portfolio website based on a Frontend Mentor challenge,
+                            built with Vue.js and Tailwind CSS with a strong focus on matching the provided design.
+                        </p>
+        
+                        <div class="project-links">
+                            <a
+                               href="https://github.com/Festival3224/frontend-mentor-minimalistic-portfolio"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+        
+                            <a
+                               href="https://festival3224.github.io/frontend-mentor-minimalistic-portfolio/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            >
+                                Live Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Resource Dashboard</h3>
+                    
+                        <p class="project-stack">
+                            HTML · CSS · JavaScript
+                        </p>
+                    
+                        <p>
+                            An RS School project from a previous JavaScript/Frontend course I completed,
+                            built as a dashboard for managing employees, projects, capacity,
+                            vacations and financial metrics.
+                        </p>
+                    
+                        <div class="project-links">
+                            <a href="https://github.com/Festival3224/outsource-dashboard"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+                    
+                            <a
+                                href="https://festival3224.github.io/outsource-dashboard/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live Demo
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+            <i class="fa-solid fa-code"></i>
+            <span></span>
+        </div>
+
+        <section id="education">
+            <div class="wrapper">
+                <h2>Education</h2>
+        
+                <div class="education-item">
+                    <h3>Kuban State University, Russia</h3>
+                    <p>Master’s Degree in Applied Mathematics</p>
+                </div>
+        
+                <h3 class="education-subtitle">Certifications</h3>
+        
+                <div class="education-item">
+                    <div class="education-row">
+                        <h4>CodeOp - International Tech School, Barcelona</h4>
+                        <span>09/2022 - 12/2022</span>
+                    </div>
+                    <p>Frontend Development Bootcamp</p>
+                </div>
+        
+                <div class="education-item">
+                    <div class="education-row">
+                        <h4>RS School</h4>
+                        <span>2026 - Present</span>
+                    </div>
+                    <p>Front-end Short Track</p>
+                </div>
+
+                <h3 class="education-subtitle">Languages</h3>
+                
+                <ul class="languages-list">
+                    <li>Russian - Native</li>
+                    <li>English - B2</li>
+                    <li>Spanish - B2</li>
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <a href="https://github.com/Festival3224" target="_blank" rel="noopener noreferrer" class="footer_link"><i
+                    class="fa-brands fa-github fa-2x"></i></a>
+            <span>2026</span>
+            <a href="https://rs.school/courses/short-track" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/rs-school-logo.svg" alt="RS School logo" class="footer__logo" />
             </a>
-            <a href="https://github.com/Festival3224" target="_blank" class="header_social"><i class="fa-brands fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/eugenia-kapusta/" target="_blank" class="header_social"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-            <a href="https://t.me/eugeniakapusta" target="_blank" class="header_social"><i class="fa-brands fa-telegram fa-2x"></i></a>
-        </nav>
-    </div>
-</header>
-
-  <main id="main">
-    <section class="hero">
-        <div class="wrapper hero_wrapper bottom-border">
-            <div class="hero_image">
-                <img src="./assets/images/Me_500w.png" alt="picture of me" />
-            </div>
-            <div class="hero_text">
-                <h1 class="hero_heading header-xl">Hey there! <br /> I'm <span>Eugenia Kapusta</span>,<br /> a Frontend Developer.</h1>
-                <p class="hero_description">Based in Spain, I'm a frontend developer with a strong tech background, passionate about building accesible, user-friendly
-                    web apps that people love to use.</p>
-                <a href="" class="hero_contact underline">Contact Me</a>
-            </div>
         </div>
-    </section>
-    
+    </footer>
 
-    <section class="about">
-        <div class="wrapper">
-            <h3>About Me</h3>
-            <p>Frontend developer with 3+ years of practical experience and 20+ years in IT overall. Skilled in Vue.js,
-                TypeScript, and modern UI development.
-                Passionate about clean code, performance optimization, and team collaboration. Actively seeking a role in a
-                growth-oriented international company
-                where I can contribute and continue learning. Currently learning at RS School.
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <div class="wrapper bottom-border">
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Git/GitHub</li>
-                <li>Vue.js</li>
-                <li>Bootstrap and TailwindCSS</li>
-                <li>Node.js</li>
-                <li>Figma and Canva</li>
-            </ul>
-        </div>    
-    </section>
-
-    <section>
-        <div class="wrapper">
-            <h3>Languages</h3>
-            <ul>
-                <li>Russian — native</li>
-                <li>English — B2</li>
-                <li>Spanish — B1-B2</li>
-            </ul>
-        </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__content">
-        <a href="https://github.com/Festival3224" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-github fa-2x"></i></a>
-        <span>2025</span>
-        <a href="https://rs.school/courses/javascript-ru" target="_blank" rel="noopener noreferrer" >
-            <img src="./assets/images/rs-school-logo.svg" alt="RS School logo" class="footer__logo" />
-        </a>
-    </div>
-    <!-- <p>Find me on <a href="https://github.com/Festival3224" target="_blank">GitHub</a></p> -->
-  </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
