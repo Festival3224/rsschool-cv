@@ -1,2 +1,3 @@
-# rsschool-cv
-CV#1. Markdown &amp; Git
+# CV
+
+https://Festival3224.github.io/rsschool-cv/
