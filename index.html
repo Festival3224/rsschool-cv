@@ -24,11 +24,20 @@
 <body>
     <div class="top-screen">
         <header class="header">
-            <div class="wrapper">
+            <div class="header-wrapper">
                 <nav class="header_nav">
                     <a href="#" class="logo-link">
                         <img src="./assets/images/logo.svg" alt="EK logo" class="logo">
                     </a>
+
+                    <ul class="nav-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#code-example">Code Example</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
         
                     <ul class="contact-list">
                         <li>
@@ -79,23 +88,19 @@
         </header>
 
         <section class="hero">
-            <div class="wrapper hero_wrapper bottom-border">
+            <div class="wrapper hero_wrapper">
                 <div class="hero_image">
                     <img src="./assets/images/Me_500w.png" alt="picture of me" />
                 </div>
                 <div class="hero_text">
                     <h1 class="hero_heading header-xl">
-                        Hey there! <br />
-                        I'm <span>Eugenia Kapusta</span>,<br />
+                        Hi, I'm <span>Eugenia Kapusta,</span><br />
                         a Frontend Developer.
                     </h1>
                     <p>
-                        Creative Frontend Developer with a strong technical background in software,
-                        automation and data-driven systems. I build responsive web applications
-                        with React, Vue.js and JavaScript, integrate REST APIs and work with
-                        Git-based development workflows. I value clean code, accessibility,
-                        performance and clear user interfaces. Currently, I am strengthening
-                        my TypeScript and testing skills through the RS School Front-end Short Track.
+                        Creative Frontend Developer with 4+ years of experience building responsive, accessible web
+                        applications with React, Vue.js and JavaScript. I focus on clean interfaces,
+                        API integration and maintainable code.
                     </p>
                     <div class="hero_actions">
                         <a
@@ -119,7 +124,7 @@
     </div>
 
     <main id="main">
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <h2>About Me</h2>
                 <p>
@@ -152,8 +157,14 @@
             </div>
         </section>
 
-        <section>
-            <div class="wrapper bottom-border">
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+            <i class="fa-solid fa-code"></i>
+            <span></span>
+        </div>
+
+        <section class="skills" id="skills">
+            <div class="wrapper">
                 <h2>Skills</h2>
                 <ul class="skills-list">
                     <li><strong>Programming Languages: </strong>JavaScript (ES6+), TypeScript (basic working knowledge)
@@ -170,7 +181,13 @@
             </div>
         </section>
 
-        <section class="code-example">
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+            <i class="fa-solid fa-code"></i>
+            <span></span>
+        </div>
+
+        <section class="code-example" id="code-example">
             <div class="wrapper">
 
                 <h2>Code Example</h2>
@@ -229,7 +246,7 @@
             </div>
         </section>
 
-        <section class="experience">
+        <section class="experience" id="experience">
             <div class="wrapper experience-wrapper">
                 <div class="experience-intro">
                     <h2>Work Experience</h2>
@@ -292,14 +309,113 @@
             </div>
         </section>
 
-        <section class="projects">
-            <div class="wrapper bottom-border">
+        <section class="projects" id="projects">
+            <div class="wrapper">
                 <h2>Projects</h2>
+        
+                <div class="projects-grid">
+        
+                    <article class="project-card">
+                        <h3>Space Travel Website</h3>
+        
+                        <p class="project-stack">
+                            HTML · CSS · JavaScript
+                        </p>
+        
+                        <p>
+                            A responsive multi-page website from FrontendMentor with adaptive layouts,
+                            responsive backgrounds and interactive navigation.
+                        </p>
+        
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/Festival3224/Space-Travel-WebSite"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+        
+                            <a href="https://celadon-manatee-e98cb5.netlify.app/"
+                               target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
+                    </article>
+        
+                    <article class="project-card">
+                        <h3>Minimalistic Portfolio</h3>
+                        
+                        <p class="project-stack">
+                            HTML · Tailwind CSS · Vue.js
+                        </p>
+                        
+                        <p>
+                            A responsive multi-page portfolio website based on a Frontend Mentor challenge,
+                            built with Vue.js and Tailwind CSS with a strong focus on matching the provided design.
+                        </p>
+        
+                        <div class="project-links">
+                            <a
+                               href="https://github.com/Festival3224/frontend-mentor-minimalistic-portfolio"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+        
+                            <a
+                               href="https://festival3224.github.io/frontend-mentor-minimalistic-portfolio/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            >
+                                Live Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Resource Dashboard</h3>
+                    
+                        <p class="project-stack">
+                            HTML · CSS · JavaScript
+                        </p>
+                    
+                        <p>
+                            An RS School project from a previous JavaScript/Frontend course I completed,
+                            built as a dashboard for managing employees, projects, capacity,
+                            vacations and financial metrics.
+                        </p>
+                    
+                        <div class="project-links">
+                            <a href="https://github.com/Festival3224/outsource-dashboard"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+                    
+                            <a
+                                href="https://festival3224.github.io/outsource-dashboard/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live Demo
+                            </a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div class="wrapper bottom-border">
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+            <i class="fa-solid fa-code"></i>
+            <span></span>
+        </div>
+
+        <section id="education">
+            <div class="wrapper">
                 <h2>Education</h2>
         
                 <div class="education-item">
@@ -311,8 +427,8 @@
         
                 <div class="education-item">
                     <div class="education-row">
-                        <h4>CodeOp — International Tech School, Barcelona</h4>
-                        <span>09/2022 – 12/2022</span>
+                        <h4>CodeOp - International Tech School, Barcelona</h4>
+                        <span>09/2022 - 12/2022</span>
                     </div>
                     <p>Frontend Development Bootcamp</p>
                 </div>
@@ -320,24 +436,22 @@
                 <div class="education-item">
                     <div class="education-row">
                         <h4>RS School</h4>
-                        <span>2026 – Present</span>
+                        <span>2026 - Present</span>
                     </div>
                     <p>Front-end Short Track</p>
                 </div>
-            </div>
-        </section>
 
-
-        <section>
-            <div class="wrapper">
-                <h2>Languages</h2>
-                <ul>
-                    <li>Russian — native</li>
-                    <li>English — B2</li>
-                    <li>Spanish — B2</li>
+                <h3 class="education-subtitle">Languages</h3>
+                
+                <ul class="languages-list">
+                    <li>Russian - Native</li>
+                    <li>English - B2</li>
+                    <li>Spanish - B2</li>
                 </ul>
+
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
